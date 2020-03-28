@@ -7,9 +7,12 @@ function App() {
   const greeding = "Hellö guys, It is Harun Reşit Heybet";
   const [text, setText] = useState(undefined);
   const isHidden = useBoolean(true);
+
+  //I used this just to show useEffect hook
   useEffect(() => {
     setText(greeding);
   }, []);
+
   return (
     <div className="App">
       <header className="App-header">
